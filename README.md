@@ -1,1 +1,1 @@
-# whack-a-bård
+# whack-a-bald
