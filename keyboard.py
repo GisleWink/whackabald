@@ -1,3 +1,4 @@
+#program for å bruke knappene som input
 import RPi.GPIO as GPIO
 import time
 from pynput.keyboard import Key, Controller
