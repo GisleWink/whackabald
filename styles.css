@@ -53,6 +53,16 @@ h1 {
     z-index: 2;
     transition: all 0.4s;
 }
+.bård2 {
+    background: url('bård2.png') bottom center no-repeat;
+    background-size: 120%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.4s;
+}
 
 .golden {
     background: url('golden.jpeg') top center no-repeat;
@@ -85,7 +95,7 @@ h1 {
 
 .hole:after{
     display:block;
-    background: url(hole.jpeg) bottom center no-repeat;
+    background: url(hole.png) bottom center no-repeat;
     background-size:contain;
     content: '';
     width: 100%;
@@ -98,6 +108,9 @@ h1 {
 
 
 .hole.up .bård{
+    top:0;
+}
+.hole.up .bård2{
     top:0;
 }
 .hole.up .golden{
@@ -143,6 +156,9 @@ button{
 }
 
     .hole.up .bård{
+        top:17px;
+    }
+    .hole.up .bård2{
         top:17px;
     }
     .hole.up .golden{
@@ -195,7 +211,7 @@ button{
 
     .hole:after{
         display:block;
-        background: url(hole.jpeg) bottom center no-repeat;
+        background: url(hole.png) bottom center no-repeat;
         background-size:contain;
         content: '';
         max-width: 70%;
@@ -207,6 +223,15 @@ button{
 
     .bård {
         background: url('bård.jpeg') bottom center no-repeat;
+        background-size: 60%;
+        position: absolute;
+        top: 100%;
+        max-width: 70%;
+        height: 70%;
+        transition: all 0.4s;
+    }
+    .bård2 {
+        background: url('bård2.png') bottom center no-repeat;
         background-size: 60%;
         position: absolute;
         top: 100%;
@@ -236,10 +261,19 @@ button{
     .hole.up .bård{
         top:50px;
     }
+    .hole.up .bård2{
+        top:50px;
+    }
     .hole.up .golden{
         top:50px;
     }
     .hole.up .pernille{
         top:50px;
     }
+}
+
+@font-face
+{
+    font-family: font;
+    src: url('league-gothic.regular.ttf');
 }
